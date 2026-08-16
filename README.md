@@ -1,13 +1,13 @@
 <h1>☕ Java Practice</h1>
 
-A repository where I practice Java programming to improve my problem-solving, programming fundamentals, and DSA skills.
+A repository dedicated to practicing Java every day and building strong programming fundamentals through consistent coding.
 
 <h3>🎯 Goals</h3>
-Practice Java consistently every day<br>
-Improve problem-solving skills<br>
+Practice Java every day<br>
 Strengthen Java fundamentals<br>
-Learn and practice java<br>
-Track my progress over time<br>
+Improve coding and problem-solving skills<br>
+Learn Java concepts through hands-on practice<br>
+Track my daily progress<br>
 
 <h3>💻 Language</h3>
 
