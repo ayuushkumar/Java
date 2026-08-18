@@ -1,7 +1,7 @@
 package practiceQuestions;
 import java.util.Scanner;
 
-public class pQues1 {
+public class Ques2 {
 
     /*
     Write a program to calculate the percentage of the given students in exam.
