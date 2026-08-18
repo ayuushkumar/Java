@@ -3,11 +3,13 @@ import java.util.Scanner;
 
 public class Ques2 {
 
-    /*
+/*
+=======================================================================================
     Q.Write a program to calculate the percentage of the given students in exam.
     Marks from 5 subject must be taken as input from the keyboard.
     (marks are out of 100).
-     */
+ ======================================================================================
+*/
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -4,8 +4,10 @@ import java.util.Scanner;
 public class Ques5 {
 
 /*
+=======================================================================================
     Q.write a java program to detect whether a number entered by the user
     is integer or not.
+=======================================================================================
 */
 
     public static void main(String[] args) {

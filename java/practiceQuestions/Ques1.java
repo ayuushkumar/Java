@@ -1,10 +1,14 @@
 package practiceQuestions;
 
 public class Ques1 {
+
+/*
+=======================================================================================
+    Q.Write a java program to add 3 numbers.
+=======================================================================================
+ */
+
     public static void main(String[] args) {
-
-
-//      Q.Write a java program to add 3 numbers.
         int a = 4;
         int b = 5;
         int c = 6;
