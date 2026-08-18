@@ -14,7 +14,7 @@ public class J3_takingInput {
         System.out.print("Sum of the numbers = " + sum);
 
 /*
-        =============- Can also use -=================
+==================- CAN ALSO USE -======================
 
         float a = sc.nextFloat();
         short s = sc.nextShort();
