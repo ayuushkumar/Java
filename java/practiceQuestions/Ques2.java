@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Ques2 {
 
     /*
-    Write a program to calculate the percentage of the given students in exam.
+    Q.Write a program to calculate the percentage of the given students in exam.
     Marks from 5 subject must be taken as input from the keyboard.
     (marks are out of 100).
      */
