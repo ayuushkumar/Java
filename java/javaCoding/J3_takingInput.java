@@ -13,16 +13,18 @@ public class J3_takingInput {
         int sum = num1 + num2;
         System.out.print("Sum of the numbers = " + sum);
 
-    }
-}
-
-        /*
+/*
         Can also use :
         float a = sc.nextFloat();
         short s = sc.nextShort();
         byte b = sc.nextByte();
         long l = sc.nextLong();
         double d = sc.nextDouble();
-        boolean bool = sc.hasNextInt(); --> int,float,byte,short etc etc.
-         */
+        boolean bool = sc.hasNextInt(); --> int,float,byte,short etc.
+        String str = sc.next();
+        String str = sc.nextLine();
+*/
+
+    }
+}
 
