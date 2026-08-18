@@ -24,7 +24,7 @@ public class Ques2 {
 
         float total = english + hindi + maths + science + computer;
         float Percentage = (total/ 500.0f)*100;
-//        float Percentage = ((english + hindi + maths + science + computer)/500)*100;
+//      float Percentage = ((english + hindi + maths + science + computer)/500)*100;
         System.out.println("Percentage = " + Percentage + "%");
 
 
