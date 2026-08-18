@@ -11,19 +11,20 @@ public class pQues1 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("English marks : ");
+        System.out.print("English marks : ");
         float english = sc.nextFloat();
-        System.out.println("Hindi marks : ");
+        System.out.print("Hindi marks : ");
         float hindi = sc.nextFloat();
-        System.out.println("Maths marks : ");
+        System.out.print("Maths marks : ");
         float maths = sc.nextFloat();
-        System.out.println("Science marks : ");
+        System.out.print("Science marks : ");
         float science = sc.nextFloat();
-        System.out.println("Computer marks : ");
+        System.out.print("Computer marks : ");
         float computer = sc.nextFloat();
 
         float total = english + hindi + maths + science + computer;
         float Percentage = (total/ 500.0f)*100;
+//        float Percentage = ((english + hindi + maths + science + computer)/500)*100;
         System.out.println("Percentage = " + Percentage + "%");
 
 
