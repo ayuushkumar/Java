@@ -6,7 +6,7 @@ public class J4_2_operatorPrecedence {
 // =====================================================
 //              OPERATOR PRECEDENCE
 // =====================================================
-
+        // It decides which operator is evaluated first.
 
         int a = 6 * 5 - 34 / 2;
         // --> * and / have higher precedence than -
