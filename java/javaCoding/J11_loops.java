@@ -16,5 +16,13 @@ public class J11_loops {
             System.out.println(i);
             i++;
         }
+
+//  If the Condition never becomes false, the while loop keeps getting executed.
+//  such a loop is known as an infinite loop.
+
+        System.out.println("This is an infinite loop");
+        while(true){
+            System.out.println("Infinite loop");
+        }
     }
 }
