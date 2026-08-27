@@ -30,6 +30,7 @@ public class J11_loops {
 //  Do While loop
 
         // Execute the code once & then check the condition.
+
         //do{
         // Statements
         //} while (condition);
@@ -39,5 +40,16 @@ public class J11_loops {
             System.out.println(a);
             a++;
         }while(a<5);
+
+//  For loop
+
+        //for(initialize; check_bool_expression; update){
+        //code;
+        //}
+
+        for(int f=0; f<=10; f++){
+            System.out.println(f);
+        }
+
     }
 }
