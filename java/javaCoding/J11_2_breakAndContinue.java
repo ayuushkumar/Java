@@ -1,6 +1,6 @@
 package javaCoding;
 
-public class j11_2_BreakAndContinue {
+public class J11_2_breakAndContinue {
     public static void main(String[] args) {
 
 // ========== Break ==========
