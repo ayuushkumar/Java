@@ -1,6 +1,6 @@
 package javaCoding;
 
-public class J11_loops {
+public class J11_1_loops {
     public static void main(String[] args) {
 
 //  While loop
