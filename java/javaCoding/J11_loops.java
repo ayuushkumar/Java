@@ -51,5 +51,11 @@ public class J11_loops {
             System.out.println(f);
         }
 
+// Decrementing for loop
+
+        for(int d = 5; d != 0; d--){
+            System.out.println(d);
+        }
+
     }
 }
