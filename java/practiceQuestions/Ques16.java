@@ -17,5 +17,14 @@ public class Ques16 {
         }
         System.out.println(sum);
 
+// ======================================================================
+//  Q.Write a program to print multiplication table of the given number.
+// ======================================================================
+
+        System.out.println("\nMultiplication table");
+        int num = 5;
+        for(int i=1; i<=10; i++){
+            System.out.printf("%d X %d = %d\n",num,i,i*num);
+        }
     }
 }
