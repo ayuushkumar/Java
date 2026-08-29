@@ -37,5 +37,18 @@ public class Ques16 {
         for(int i=10; i>0; i--) {
             System.out.printf("%d X %d = %d\n", r, i, i * r);
         }
+
+// =============================================================
+//  Q.Write a program to find the factorial of a given number
+//  using for loops.
+// =============================================================
+
+        System.out.println("\nFactorial");
+        int f = 5;
+        int factorial = 1;
+        for(int i=1; i<=f; i++) {
+            factorial = factorial * i;
+        }
+        System.out.println(factorial);
     }
 }
