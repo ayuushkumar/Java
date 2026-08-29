@@ -26,5 +26,16 @@ public class Ques16 {
         for(int i=1; i<=10; i++){
             System.out.printf("%d X %d = %d\n",num,i,i*num);
         }
+
+// ========================================================
+//  Q.Write a program to print multiplication table
+//  in reverse of the given number.
+// ========================================================
+
+        System.out.println("\nMultiplication table in reverse");
+        int r = 5;
+        for(int i=10; i>0; i--) {
+            System.out.printf("%d X %d = %d\n", r, i, i * r);
+        }
     }
 }
