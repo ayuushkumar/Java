@@ -61,5 +61,24 @@ public class Ques16 {
             w++;
         }
         System.out.println(factorial2);
+
+// ====================================================================
+//  Q. Write a program using while loop to print the following pattern
+//      ****
+//      ***
+//      **
+//      *
+// ====================================================================
+
+        int p = 4;
+        while(p>0){
+            int j=1;
+            while(j<=p){
+                System.out.print("*");
+                j++;
+            }
+            System.out.print("\n");
+            p--;
+        }
     }
 }
