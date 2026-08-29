@@ -50,5 +50,16 @@ public class Ques16 {
             factorial = factorial * i;
         }
         System.out.println(factorial);
+
+//  Q.Using while loop
+
+        System.out.println("\nFactorial using While loop");
+        int w = 1;
+        int factorial2 = 1;
+        while(w<=5){
+            factorial2 = factorial2 * w;
+            w++;
+        }
+        System.out.println(factorial2);
     }
 }
