@@ -94,5 +94,24 @@ public class Ques17 {
             }
         }
         System.out.println("\nThe minimum element is: " + min);
+
+// ===================================================================
+//  Q.Write a java program to find whether an array is sorted or not.
+// ===================================================================
+
+        boolean isSorted = true;
+        int[] arr = {34,56,67,90,99}; // true
+        // int[] arr = {34,70,67,100,99}; // false
+        for(int i=0; i < arr.length-1;i++) {
+            if (arr[i] > arr[i + 1]) {
+                isSorted = false;
+                break;
+            }
+        }
+        if(isSorted){
+            System.out.println("\nThe Array is sorted");
+        }else{
+            System.out.println("\nThe Array is not sorted");
+        }
     }
 }
