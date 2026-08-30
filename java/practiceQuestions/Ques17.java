@@ -66,7 +66,7 @@ public class Ques17 {
 //  Q.Write a java program to find the maximum element in an array.
 // =================================================================
 
-        int[] maximum = {60,70,80,90,99,50,65,};
+        int[] maximum = {60,70,80,90,99,50,65};
         int max = Integer.MIN_VALUE; // Value of MIN_VALUE --> -2147483648
         for(int e: maximum){
             if(e > max){
@@ -81,5 +81,18 @@ public class Ques17 {
 //            }
 //        }
 //        System.out.println("\nThe maximum number is: " + max);
+
+// =================================================================
+//  Q.Write a java program to find the maximum element in an array.
+// =================================================================
+
+        int[] minimum = {-98, 89, 87, -90, 55, 100};
+        int min = Integer.MAX_VALUE; // Value of MAX_VALUE --> 2147483647
+        for(int m:minimum ){
+            if(m < min){
+                min = m;
+            }
+        }
+        System.out.println("\nThe minimum element is: " + min);
     }
 }
