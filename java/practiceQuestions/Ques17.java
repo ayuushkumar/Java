@@ -61,5 +61,25 @@ public class Ques17 {
             }
             System.out.println();
         }
+
+// =================================================================
+//  Q.Write a java program to find the maximum element in an array.
+// =================================================================
+
+        int[] maximum = {60,70,80,90,99,50,65,};
+        int max = Integer.MIN_VALUE; // Value of MIN_VALUE --> -2147483648
+        for(int e: maximum){
+            if(e > max){
+                max = e;
+            }
+        }
+        System.out.println("\nThe maximum element is: " + max);
+
+//        for(int i=0; i<maximum.length;i++){
+//            if(max<maximum[i]){
+//                max =  maximum[i];
+//            }
+//        }
+//        System.out.println("\nThe maximum number is: " + max);
     }
 }
