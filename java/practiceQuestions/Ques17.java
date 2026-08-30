@@ -12,7 +12,7 @@ public class Ques17 {
         for(float addition: marks){
             sum += addition;
         }
-        System.out.println("The sum is: " + sum);
+        System.out.println("\nThe sum is: " + sum);
 
 // =============================================================
 //  Q.Write a program to find out whether a given number is
@@ -29,9 +29,22 @@ public class Ques17 {
             }
         }
         if(isInArray){
-            System.out.println("The number is in the array");
+            System.out.println("\nThe number is in the array");
         }else{
-            System.out.println("The number is not in the array");
+            System.out.println("\nThe number is not in the array");
         }
+
+// =============================================================
+//  Q.Calculate the average marks from an array containing
+//  marks of all students using for-each loop.
+// =============================================================
+
+        float[] marks3= {89.5f, 67.7f, 90.9f, 78.8f, 88.9f};
+        float sum2=0;
+        for(float avg: marks3){
+            sum2 += avg;
+        }
+        System.out.println("\nThe average of the class is: " + sum/marks3.length);
+
     }
 }
