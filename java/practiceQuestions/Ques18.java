@@ -44,6 +44,19 @@ public class Ques18 {
         }
     }
 
+// ======================================================
+//  Q. Write a recursive function to calculate the sum of
+//      first n natural numbers.
+// ======================================================
+
+    static int sum(int n){
+        if(n==1){
+            return 1;
+        }else{
+            return n + sum(n - 1);
+        }
+    }
+
     public static void main(String[] args) {
 
 //  Problem 1
@@ -60,6 +73,10 @@ public class Ques18 {
         int s = 4;
         System.out.println("\n\nPatterns for "+s+" number is: ");
         pattern(s);
+
+//  Problem 4
+        int c = 3;
+        System.out.println("\nThe sum of first "+c+" natiral numbers is: "+sum(c));
 
     }
 }
