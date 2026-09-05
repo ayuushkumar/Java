@@ -27,16 +27,39 @@ public class Ques18 {
         }
     }
 
+// ==================================================================
+//  Q. Write a program using function to print the following pattern
+//      *
+//      **
+//      ***
+//      ****
+// ==================================================================
+
+    static void pattern(int p){
+        for(int i=1; i<=p; i++){
+            for(int j=i; j>0; j--){
+                System.out.print("*");;
+            }
+            System.out.print("\n");
+        }
+    }
+
     public static void main(String[] args) {
 
 //  Problem 1
         multiplication(7);
 
-// Problem 2
+//  Problem 2
         int x = 5;
         System.out.println("\nFibonacci number "+x+" is: ");
         for(int i=0;i<=x;i++){
             System.out.print(Fibonacci(i)+" ");
         }
+
+//  Problem 3
+        int s = 4;
+        System.out.println("\n\nPatterns for "+s+" number is: ");
+        pattern(s);
+
     }
 }
