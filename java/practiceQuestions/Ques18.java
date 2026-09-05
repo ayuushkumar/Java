@@ -57,6 +57,24 @@ public class Ques18 {
         }
     }
 
+// ===================================================================
+//  Q. Write a program using function to print the following pattern
+//      *****
+//      ****
+//      ***
+//      **
+//      *
+// ===================================================================
+
+    static void pattern2(int p){
+        for(int i=p; i>0; i--){
+            for(int j=i; j>0; j--){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
 
 //  Problem 1
@@ -71,12 +89,17 @@ public class Ques18 {
 
 //  Problem 3
         int s = 4;
-        System.out.println("\n\nPatterns for "+s+" number is: ");
+        System.out.println("\n\nPattern for "+s+" number is: ");
         pattern(s);
 
 //  Problem 4
         int c = 3;
         System.out.println("\nThe sum of first "+c+" natiral numbers is: "+sum(c));
+
+//  Problem 5
+        int s2 = 5;
+        System.out.println("\nPattern for "+s2+" number is: " );
+        pattern2(s2);
 
     }
 }
