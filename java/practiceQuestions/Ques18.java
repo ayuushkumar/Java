@@ -19,11 +19,11 @@ public class Ques18 {
 //  (recursion must be used)
 // ============================================================
 
-    static int Fibonacci(int f){
+    static int fibonacci(int f){
         if(f==0 || f==1){
             return f;
         }else{
-            return Fibonacci(f-1)+Fibonacci(f-2);
+            return fibonacci(f-1)+fibonacci(f-2);
         }
     }
 
@@ -75,6 +75,14 @@ public class Ques18 {
         }
     }
 
+// ===============================================================
+//  Q. Write a program to convert Celsius to Fahrenheit.
+// ===============================================================
+
+    static double fahrenheit(double celsius){
+        return (celsius * 9 / 5 ) + 32;
+    }
+
     public static void main(String[] args) {
 
 //  Problem 1
@@ -84,7 +92,7 @@ public class Ques18 {
         int x = 5;
         System.out.println("\nFibonacci number "+x+" is: ");
         for(int i=0;i<=x;i++){
-            System.out.print(Fibonacci(i)+" ");
+            System.out.print(fibonacci(i)+" ");
         }
 
 //  Problem 3
@@ -100,6 +108,11 @@ public class Ques18 {
         int s2 = 5;
         System.out.println("\nPattern for "+s2+" number is: " );
         pattern2(s2);
+
+//  Problem 6
+        double celsius = 25;
+        double fahrenheit = fahrenheit(celsius);
+        System.out.println("\nFahrenheit of Celsius "+celsius+" is: "+fahrenheit);
 
     }
 }
