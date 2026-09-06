@@ -26,6 +26,23 @@ class Employee{
     }
 }
 
+// ==========================================================
+//  Q. Create a class cellphone with method to print
+//     "ringing...", "vibrating..." etc.
+// ==========================================================
+
+class cellPhone{
+    public void calling(){
+        System.out.println("Calling...");
+    }
+    public void ringing(){
+        System.out.println("Ringing...");
+    }
+    public void vibrating(){
+        System.out.println("Vibrating...");
+    }
+}
+
 public class Ques19 {
     public static void main(String[] args) {
 
@@ -37,5 +54,11 @@ public class Ques19 {
         System.out.println(emp.getName());
         System.out.println(emp.getSalary());
 
+//  Problem 2
+        cellPhone lava = new cellPhone();
+        System.out.println();
+        lava.calling();
+        lava.ringing();
+        lava.vibrating();
     }
 }
