@@ -43,6 +43,21 @@ class cellPhone{
     }
 }
 
+// ==============================================================
+//  Q. Create a class square with method to initialize its side
+//     calculate its area and perimeter.
+// ==============================================================
+
+class square {
+    int side;
+    public int area(){
+        return side * side;
+    }
+    public int perimeter(){
+        return 4*side;
+    }
+}
+
 public class Ques19 {
     public static void main(String[] args) {
 
@@ -60,5 +75,13 @@ public class Ques19 {
         lava.calling();
         lava.ringing();
         lava.vibrating();
+
+//  Problem 3
+        square sq = new square();
+        System.out.println();
+        sq.side = 3;
+        System.out.println(sq.area());
+        System.out.println(sq.perimeter());
+
     }
 }
