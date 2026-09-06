@@ -58,6 +58,21 @@ class square {
     }
 }
 
+// =================================================================
+//  Q. Repeat Q3 for Rectangle.
+// =================================================================
+
+class rectangle{
+    int length;
+    int breath;
+    public int area(){
+        return length * breath;
+    }
+    public int perimeter(){
+        return 2*(length + breath);
+    }
+}
+
 public class Ques19 {
     public static void main(String[] args) {
 
@@ -82,6 +97,14 @@ public class Ques19 {
         sq.side = 3;
         System.out.println(sq.area());
         System.out.println(sq.perimeter());
+
+//  Problem 4
+        rectangle rec = new rectangle();
+        System.out.println();
+        rec.length = 6;
+        rec.breath = 7;
+        System.out.println(rec.area());
+        System.out.println(rec.perimeter());
 
     }
 }
