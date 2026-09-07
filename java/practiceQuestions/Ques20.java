@@ -44,6 +44,33 @@ class Cylinder{
     }
 }
 
+// ============================================================
+//  Q.Overload a Constructor used to initialize a rectangle of
+//      length 4 and breath 5 for using custom parameters
+// ============================================================
+
+class Rectangle{
+    private int length;
+    private int breath;
+
+    public Rectangle(){
+        length=4;
+        breath=5;
+    }
+
+    public Rectangle(int l, int b){
+        length=l;
+        breath=b;
+    }
+
+    public int getLength(){
+        return length;
+    }
+    public int getBreath(){
+        return breath;
+    }
+}
+
 public class Ques20 {
     public static void main(String[] args) {
 
@@ -69,6 +96,16 @@ public class Ques20 {
         System.out.println(myCylinder2.getHeight());
         System.out.println(myCylinder2.getRadius());
 
+//  Problem 4
+        Rectangle myRectangle = new Rectangle();
+        System.out.println();
+        System.out.println(myRectangle.getLength());
+        System.out.println(myRectangle.getBreath());
+
+        Rectangle myRectangle2 = new Rectangle(20,30);
+        System.out.println();
+        System.out.println(myRectangle2.getLength());
+        System.out.println(myRectangle2.getBreath());
 
     }
 }
