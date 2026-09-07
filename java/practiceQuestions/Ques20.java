@@ -33,6 +33,15 @@ class Cylinder{
     public double volume(){
         return Math.PI * radius * radius * height;
     }
+
+// =======================================================
+//  Q. Use a Constructor and repeat Q.1
+// =======================================================
+    public Cylinder(){}
+    public Cylinder(int h, int r){
+        height=h;
+        radius=r;
+    }
 }
 
 public class Ques20 {
@@ -53,6 +62,13 @@ public class Ques20 {
 
         System.out.print("Volume of the Cylinder is: ");
         System.out.println(myCylinder.volume());
+
+//  Problem 3
+        Cylinder myCylinder2 = new Cylinder(15,20);
+        System.out.println();
+        System.out.println(myCylinder2.getHeight());
+        System.out.println(myCylinder2.getRadius());
+
 
     }
 }
