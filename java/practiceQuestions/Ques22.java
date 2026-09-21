@@ -35,6 +35,39 @@ class FountainPen extends Pen{
     }
 }
 
+// ================================================================
+//  Q. Create a class Monkey with jump() and bite() methods.
+//  Create a class Human which inherits this Monkey class and
+//  implements BasicAnimal interface with eat() and sleep methods.
+// ================================================================
+
+class Monkey{
+    void jump(){
+        System.out.println("Jumping...");
+    }
+    void bite(){
+        System.out.println("Biting...");
+    }
+}
+
+interface BasicAnimal{
+    void eat();
+    void sleep();
+}
+
+class Human extends Monkey implements BasicAnimal{
+
+    @Override
+    public void eat() {
+        System.out.println("Eating...");
+    }
+
+    @Override
+    public void sleep() {
+        System.out.println("Sleeping...");
+    }
+}
+
 public class Ques22 {
     public static void main(String[] args) {
 
@@ -48,6 +81,10 @@ public class Ques22 {
         fp.changeNib();
         fp.write();
         fp.refill();
+
+//  Problem 3
+        Human human = new Human();
+        human.sleep();
 
     }
 }
