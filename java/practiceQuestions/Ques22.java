@@ -86,5 +86,20 @@ public class Ques22 {
         Human human = new Human();
         human.sleep();
 
+// ===============================================================
+//  Q.Demonstrate polymorphism using monkey  class from Q3
+// ===============================================================
+
+//  Problem 4
+        Monkey m1 = new Human();
+        m1.jump();
+        m1.bite();
+        // m1.speak(); --> error
+
+        BasicAnimal Banimal = new Human();
+        // lovish.speak(); --> error
+        Banimal.eat();
+        Banimal.sleep();
+
     }
 }
