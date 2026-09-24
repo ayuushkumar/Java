@@ -68,6 +68,41 @@ class Human extends Monkey implements BasicAnimal{
     }
 }
 
+// =====================================================
+// Q. Create a class Telephone with ring(), lift() and
+// disconnect() methods as abstract methods.
+// Create another class SmartTelephone and demonstrate
+// polymorphism.
+// =====================================================
+
+abstract class Telephone {
+    abstract void ring();
+    abstract void lift();
+    abstract void disconnect();
+}
+
+class SmartTelephone extends Telephone {
+
+    @Override
+    void ring() {
+        System.out.println("Smart Telephone is ringing...");
+    }
+
+    @Override
+    void lift() {
+        System.out.println("Smart Telephone call picked up...");
+    }
+
+    @Override
+    void disconnect() {
+        System.out.println("Smart Telephone call disconnected...");
+    }
+
+    void browseInternet() {
+        System.out.println("Browsing Internet...");
+    }
+}
+
 public class Ques22 {
     public static void main(String[] args) {
 
@@ -100,6 +135,14 @@ public class Ques22 {
         // lovish.speak(); --> error
         Banimal.eat();
         Banimal.sleep();
+
+//  Problem 5 - Polymorphism
+        Telephone phone = new SmartTelephone();
+
+        phone.ring();
+        phone.lift();
+        phone.disconnect();
+        //  phone.browseInternet(); --> error
 
     }
 }
