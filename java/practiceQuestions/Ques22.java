@@ -103,6 +103,52 @@ class SmartTelephone extends Telephone {
     }
 }
 
+// =====================================================
+// Q. Create an Interface TVRemote and use it to inherit
+// another Interface SmartTVRemote
+// =====================================================
+
+interface TVRemote {
+
+    void powerOn();
+    void powerOff();
+    void changeChannel();
+}
+
+interface SmartTVRemote extends TVRemote {
+
+    void connectToWifi();
+    void openNetflix();
+}
+
+class SmartTV implements SmartTVRemote {
+
+    @Override
+    public void powerOn() {
+        System.out.println("TV turned ON");
+    }
+
+    @Override
+    public void powerOff() {
+        System.out.println("TV turned OFF");
+    }
+
+    @Override
+    public void changeChannel() {
+        System.out.println("Channel changed");
+    }
+
+    @Override
+    public void connectToWifi() {
+        System.out.println("Connected to WiFi");
+    }
+
+    @Override
+    public void openNetflix() {
+        System.out.println("Opening Netflix");
+    }
+}
+
 public class Ques22 {
     public static void main(String[] args) {
 
@@ -143,6 +189,15 @@ public class Ques22 {
         phone.lift();
         phone.disconnect();
         //  phone.browseInternet(); --> error
+
+//  Problem 6
+        SmartTV tv = new SmartTV();
+
+        tv.powerOn();
+        tv.changeChannel();
+        tv.connectToWifi();
+        tv.openNetflix();
+        tv.powerOff();
 
     }
 }
