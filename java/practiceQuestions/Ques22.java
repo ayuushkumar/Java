@@ -149,6 +149,29 @@ class SmartTV implements SmartTVRemote {
     }
 }
 
+// =====================================================
+// Q. Create a class TV which implements TVRemote
+// interface from Q6
+// =====================================================
+
+class TV implements TVRemote {
+
+    @Override
+    public void powerOn() {
+        System.out.println("TV is turned ON");
+    }
+
+    @Override
+    public void powerOff() {
+        System.out.println("TV is turned OFF");
+    }
+
+    @Override
+    public void changeChannel() {
+        System.out.println("Channel changed");
+    }
+}
+
 public class Ques22 {
     public static void main(String[] args) {
 
@@ -198,6 +221,13 @@ public class Ques22 {
         tv.connectToWifi();
         tv.openNetflix();
         tv.powerOff();
+
+// Problem 7
+        TV remote = new TV();
+
+        remote.powerOn();
+        remote.changeChannel();
+        remote.powerOff();
 
     }
 }
