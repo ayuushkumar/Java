@@ -69,15 +69,53 @@ class Cuboid extends Rectangle2 {
         return this.length * this.breadth * this.height;
     }
 }
+
+// =======================================================
+//  Q. Create a class Employee and use inheritance to create
+//      another class Manager from it.
+// =======================================================
+
+class Employee2 {
+    public int salary;
+
+    Employee2(int s) {
+        System.out.println("I am employee constructor");
+        this.salary = s;
+    }
+
+    public int getSalary() {
+        return this.salary;
+    }
+}
+
+class Manager extends Employee2 {
+    public int bonus;
+
+    Manager(int s, int b) {
+        super(s);
+        System.out.println("I am manager constructor");
+        this.bonus = b;
+    }
+
+    public int totalSalary() {
+        return this.salary + this.bonus;
+    }
+}
 public class Ques21 {
     public static void main(String[] args) {
-// Problem 1
+//  Problem 1
         // Circle objC = new Circle(12);
         Cylinder1 obj = new Cylinder1(6, 7);
 
-// Problem 2
+//  Problem 2
         // Rectangle objR = new Rectangle(12, 8);
         Cuboid objR = new Cuboid(6, 7, 10);
+
+//  Problem 3
+        Manager obj3 = new Manager(50000, 10000);
+
+        System.out.println("Salary = " + obj3.getSalary());
+        System.out.println("Total Salary = " + obj3.totalSalary());
 
     }
 }
