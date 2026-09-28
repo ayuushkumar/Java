@@ -101,6 +101,35 @@ class Manager extends Employee2 {
         return this.salary + this.bonus;
     }
 }
+
+// =======================================================
+//  Q. Create a class Vehicle and use inheritance to create
+//      another class Car from it.
+// =======================================================
+
+class Vehicle {
+    public String brand;
+
+    Vehicle(String b) {
+        this.brand = b;
+    }
+    public void displayBrand() {
+        System.out.println("Brand: " + this.brand);
+    }
+}
+class Car extends Vehicle {
+    public int speed;
+
+    Car(String b, int s) {
+        super(b);
+        this.speed = s;
+    }
+
+    public void displaySpeed() {
+        System.out.println("Speed: " + this.speed + " km/h");
+    }
+}
+
 public class Ques21 {
     public static void main(String[] args) {
 //  Problem 1
@@ -116,6 +145,12 @@ public class Ques21 {
 
         System.out.println("Salary = " + obj3.getSalary());
         System.out.println("Total Salary = " + obj3.totalSalary());
+
+// Problem 4
+        Car cars = new Car("BMW", 200);
+
+        cars.displayBrand();
+        cars.displaySpeed();
 
     }
 }
