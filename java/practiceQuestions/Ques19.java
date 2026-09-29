@@ -73,6 +73,29 @@ class rectangle{
     }
 }
 
+// ==================================================================
+//  Q. Create a class Student with properties name, rollNo and marks.
+//     Create methods to set the student's details and display them.
+// ==================================================================
+
+class Student{
+    String name;
+    int rollNo;
+    int marks;
+
+    public void setDetails(String n, int r, int m){
+        name = n;
+        rollNo = r;
+        marks = m;
+    }
+
+    public void displayDetails(){
+        System.out.println("Name: " + name);
+        System.out.println("Roll No: " + rollNo);
+        System.out.println("Marks: " + marks);
+    }
+}
+
 public class Ques19 {
     public static void main(String[] args) {
 
@@ -105,6 +128,12 @@ public class Ques19 {
         rec.breath = 7;
         System.out.println(rec.area());
         System.out.println(rec.perimeter());
+
+// Problem 5
+        Student student = new Student();
+        System.out.println();
+        student.setDetails("Ayush", 101, 85);
+        student.displayDetails();
 
     }
 }
